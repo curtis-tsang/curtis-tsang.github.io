@@ -1,5 +1,24 @@
+body{
+    margin: 0px;
+    padding:0px;
+}
+
+.txt_box{
+    position: relative;
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-right: 3px solid rgba(255, 255, 255, .1);
+}
+
 .mega_box{
-    width: 100%
+    width: 1440px;
+    height: 2016px;
     background-image: url("IMG_1081.JPG");
     background-repeat : round ;
+}
+
+.heading_box{
+    position: relative;
+    backdrop-filter: blur(3px);
 }
