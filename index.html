@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <meta charset = "UTF-8">
-    <meta name = "description" content = " This is my website.">
     <head>
+        <meta charset = "UTF-8">
+        <meta name = "description" content = " This is my website.">
+        <py-config>
+            packages = ["matplotlib", "pandas"]
+        </py-config>
+        <link rel = "stylesheet" href = 'style_background.css'>
+
         <title>TSANG, Tsz Chung Curtis' Website</title>
-    </head>
-    <body>
+    <div class = "mega_box">
+        <body>
+        <div class = "background">
+        </div>
         <h1 style = "line-height: 80%;">TSANG, Tsz Chung Curtis</h1>
         <p style = "line-height: 100%;">The Hong Kong University of Science and Technology</p>
         <p style = "line-height: 100%;">Bachelor of Engineering with extended major in Artificial Intelligence (currently year 1)</p>
         <hr background-color = "cyan"; width = 100% />
 
         <header>
-            <nav>
+            <nav >
                 <p style = "background-color: cyan;"> Contact: </p>
                 <p style = "line-height: 50%;">Phone: (+852) 5511 6186</p>
                 <p style = "line-height: 50%;">Email: tcctsang@connect.ust.hk</p>
@@ -23,19 +30,17 @@
             </nav>
         </header>
         <main>
-            <article>
-                <section>
-                    <h3 style = "line-height: 100%;">Summary:</h3>
-                    <p style = "line-height: 100%; margin-left: 40px;">Welcome to this page. I am Curtis Tsang who is now studying at the Hong Kong University of Science and Technology and aiming for a Bachelor degree in computer engineering or possibly computer science.</p>
+            <section>
+                    <h3 style = "line-height: 50%;">Summary:</h3>
+                    <p style = "line-height: 100%; margin: 40px">Welcome to this page. I am Curtis Tsang who is now studying at the Hong Kong University of Science and Technology and aiming for a Bachelor degree in computer engineering or possibly computer science.</p>
                     <p></p>
-                    <p style = "line-height: 100%; margin-left: 40px;">I spent my secondary school life at Queen's College and picked posts such as Deputy Head Libray Prefect and Counselling Prefect which allowed me to gain experience in working with different stakeholders at the campus.</p>
+                    <p style = "line-height: 100%; margin: 40px">I spent my secondary school life at Queen's College and picked posts such as Deputy Head Libray Prefect and Counselling Prefect which allowed me to gain experience in working with different stakeholders at the campus.</p>
                     <p></p>
-                    <p style = "line-height: 100%; margin-left: 40px;">I am interested in exploring different skills in data analysis and visualization. Discovering the hidden relationship among data and expressing them clearly give me great sense of satisfaction. Moreover, I also try to learn ways to effectively express ideas through photography.</p>
+                    <p style = "line-height: 100%; margin: 40px">I am interested in exploring different skills in data analysis and visualization. Discovering the hidden relationship among data and expressing them clearly give me great sense of satisfaction. Moreover, I also try to learn ways to effectively express ideas through photography.</p>
                     <p></p>
-                    <p style = "line-height: 100%; margin-left: 40px;"></p>
                     <hr/>
-                </section>
-                <section>
+            </section>
+            <section>
                     <p style = "background-color: cyan;">Self-directed programs for leisure:</p>
                     <ol>
                         <li>C++
@@ -45,13 +50,34 @@
                                 </li>
                             </ul>
                         </li>
+                        <li>Python
+                            <ul>
+                                <li>
+                                    <head>
+                                        <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+                                        <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+                                      </head>
+                                    <body>
+                                        <p>pandas.Series Transcript: </p>
+                                        <py-script>
+                                            import matplotlib
+                                            import pandas
+                                            Transcript = {
+                                                            "Course" : ['Civl 1100', 'Comp 1021', 'Comp 2011', 'Core 1403', 'Elec 1200', 'Math 1013', 'Math 1014', 'Mech 1906', 'Phys 1003', 'Phys 1112'],
+                                                            "Credits" : [3, 3, 4, 3, 4, 3, 3, 3, 3, 3],
+                                                            "Grade" : ['A', 'A', 'B', 'B+', 'B+', 'B', 'B-', 'A', 'A', 'A-']
+                                                        }
+                                            data = pandas.DataFrame(Transcript)
+                                            data.index += 1
+                                            print(data)
+                                        </py-script>
+                                    </body>
+                                </li>
+                            </ul>
+                        </li>
                     </ol>
-                </section>
-            </article>
+            </section>
         </main>
-        <footer>
-
-        </footer>
-    </body>
-
+        </body>
+    </div>
 </html>
