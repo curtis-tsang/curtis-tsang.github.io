@@ -1,0 +1,9 @@
+body{
+    margin: 0px;
+    padding:0px;
+}
+
+.mega_box{
+    background-image: url("IMG_1081.JPG");
+    background-repeat : round ;
+}
