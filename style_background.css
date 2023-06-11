@@ -1,5 +1,7 @@
 body{
-    margin: 0px;
+    margin-top: -20px;
+    margin-left: 0px;
+    margin-right: 0px;
     padding:0px;
 }
 
@@ -8,12 +10,10 @@ body{
     border-radius: 10px;
     backdrop-filter: blur(3px);
     border: 3px solid rgba(255, 255, 255, 0.5);
-    border-right: 3px solid rgba(255, 255, 255, .1);
 }
 
 .mega_box{
-    width: 1440px;
-    height: 2016px;
+    background-size: cover;
     background-image: url("IMG_1081.JPG");
     background-repeat : round ;
 }
