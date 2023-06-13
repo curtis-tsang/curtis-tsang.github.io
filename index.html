@@ -1,41 +1,89 @@
-body{
-    margin-top: -40px;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding:0px;
-}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "description" content = " This is my website.">
+        <py-config>
+            packages = ["matplotlib", "pandas"]
+        </py-config>
+        <link rel = "stylesheet" href = 'style_background.css'>
 
-.txt_box3{
-    position: relative;
-    border-radius: 10px;
-    backdrop-filter: blur(3px);
-    background-color: rgba(141, 164, 255, 0.8);
-    border: 3px solid rgba(255, 255, 255, 0.5);
-}
+        <title>TSANG, Tsz Chung Curtis' Website</title>
+    <div class = "mega_box">
+        <body>
+            <div class = "heading_box txt_box" style = "background-color: rgba(153, 235, 255, 0.5);">
+            <h1 style = "line-height: 100%; margin-left: 5px;">TSANG, Tsz Chung Curtis</h1>
+            <p style = "line-height: 100%; margin-left: 5px;">The Hong Kong University of Science and Technology</p>
+            <p style = "line-height: 100%; margin-left: 5px;">Bachelor of Engineering with extended major in Artificial Intelligence (currently year 1)</p>
+            </div>
+            <p></p>
 
-.txt_box2{
-    position: relative;
-    border-radius: 10px;
-    backdrop-filter: blur(3px);
-    background-color: rgba(213, 247, 255, 0.8);
-    border: 3px solid rgba(255, 255, 255, 0.5);
-}
+        <nav>
+            <p class = "txt_box" style = "background-color: cyan;">
+                <a href = "contact.html" style = "margin-left: 5px;">My Contact</a>
+            </p>
+        </nav>
+        <p></p>
+        <main>
+            <section class = "txt_box" style = "background-color: rgba(153, 235, 255, 0.5);">
+                    <h3 style = "line-height: 0%; margin-left: 5px;">Summary:</h3>
+                    <p style = "line-height: 100%; margin: 40px">Welcome to this page. I am Curtis Tsang who is now studying at the Hong Kong University of Science and Technology and aiming for a Bachelor degree in computer engineering or possibly computer science.</p>
+                    <p></p>
+                    <p style = "line-height: 100%; margin: 40px">I spent my secondary school life at Queen's College and picked posts such as Deputy Head Libray Prefect and Counselling Prefect which allowed me to gain experience in working with different stakeholders at the campus.</p>
+                    <p></p>
+                    <p style = "line-height: 100%; margin: 40px">I am interested in exploring different skills in data analysis and visualization. Discovering the hidden relationship among data and expressing them clearly give me great sense of satisfaction. Moreover, I also try to learn ways to effectively express ideas through photography.</p>
+                    <p></p>
+            </section>
+            <p></p>
+            <section class = "txt_box" style = "background-color: rgba(153, 235, 255, 0.6);">
+                    <h3 style = "line-height: 0%; margin-left: 5px;">Self-directed programs for leisure:</h3>
+                    <ol style = "margin-left: 10px;">
+                        <li>C++
+                            <ul>
+                                <li>
+                                    Linked-list Calendar <a href = "https://github.com/curtis-tsang/linked-list-calendar"; target = _blank;>[here]</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Python
+                            <ul>
+                                <li>
+                                    <head>
+                                        <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+                                        <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+                                      </head>
+                                    <body>
+                                        <p>pandas.Series Transcript: </p>
+                                        <py-script>
+                                            import matplotlib.pyplot
+                                            import pandas
+                                            
+                                            Transcript = {
+                                                            "Course" : ['Civl 1100', 'Comp 1021', 'Comp 2011', 'Core 1403', 'Elec 1200', 'Math 1013', 'Math 1014', 'Mech 1906', 'Phys 1003', 'Phys 1112'],
+                                                            "Credits" : [3, 3, 4, 3, 4, 3, 3, 3, 3, 3],
+                                                            "Grade" : ['A', 'A', 'B', 'B+', 'B+', 'B', 'B-', 'A', 'A', 'A-']
+                                                        }
+                                            data = pandas.DataFrame(Transcript)
+                                            data.index += 1
+                                            print(data)
 
-.txt_box{
-    position: relative;
-    border-radius: 10px;
-    backdrop-filter: blur(3px);
-    background-color: rgba(153, 235, 255, 0.8);
-    border: 3px solid rgba(255, 255, 255, 0.5);
-}
+                                            grade_level = ["B-", "B", "B+", "A-", "A", "A+"]
+                                            axis = [0, 0, 0, 0, 0, 0]
 
-.mega_box{
-    background-size: cover;
-    background-image: url("IMG_7296.JPG");
-    background-repeat : round ;
-}
+                                            for _ in Transcript["Grade"]:
+                                                for i in range(len(grade_level)):
+                                                    if (grade_level[i] == _):
+                                                        axis[i] += 1
 
-.heading_box{
-    position: relative;
-    backdrop-filter: blur(3px);
-}
+                                            fig, ax = matplotlib.pyplot.subplots()
+                                            ax.plot(grade_level, axis)
+                                        </py-script>
+                                    </body>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+            </section>
+        </main>
+        </body>
+</html>
