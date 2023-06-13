@@ -5,6 +5,22 @@ body{
     padding:0px;
 }
 
+.txt_box3{
+    position: relative;
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+    background-color: rgba(141, 164, 255, 0.8);
+    border: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.txt_box2{
+    position: relative;
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+    background-color: rgba(213, 247, 255, 0.8);
+    border: 3px solid rgba(255, 255, 255, 0.5);
+}
+
 .txt_box{
     position: relative;
     border-radius: 10px;
