@@ -11,22 +11,22 @@
         <title>TSANG, Tsz Chung Curtis' Website</title>
     <div class = "mega_box">
         <body>
-            <div class = "heading_box">
-            <h1 style = "line-height: 100%;">TSANG, Tsz Chung Curtis</h1>
-            <p style = "line-height: 100%;">The Hong Kong University of Science and Technology</p>
-            <p style = "line-height: 100%;">Bachelor of Engineering with extended major in Artificial Intelligence (currently year 1)</p>
+            <div class = "heading_box txt_box" style = "background-color: rgba(153, 235, 255, 0.5);">
+            <h1 style = "line-height: 100%; margin-left: 5px;">TSANG, Tsz Chung Curtis</h1>
+            <p style = "line-height: 100%; margin-left: 5px;">The Hong Kong University of Science and Technology</p>
+            <p style = "line-height: 100%; margin-left: 5px;">Bachelor of Engineering with extended major in Artificial Intelligence (currently year 1)</p>
             </div>
             <p></p>
 
         <nav>
-            <p style = "background-color: cyan;">
-                <a href = "contact.html">My Contact</a>
+            <p class = "txt_box" style = "background-color: cyan;">
+                <a href = "contact.html" style = "margin-left: 5px;">My Contact</a>
             </p>
         </nav>
         <p></p>
         <main>
-            <section class = "txt_box">
-                    <h3 style = "line-height: 50%;">Summary:</h3>
+            <section class = "txt_box" style = "background-color: rgba(153, 235, 255, 0.5);">
+                    <h3 style = "line-height: 0%; margin-left: 5px;">Summary:</h3>
                     <p style = "line-height: 100%; margin: 40px">Welcome to this page. I am Curtis Tsang who is now studying at the Hong Kong University of Science and Technology and aiming for a Bachelor degree in computer engineering or possibly computer science.</p>
                     <p></p>
                     <p style = "line-height: 100%; margin: 40px">I spent my secondary school life at Queen's College and picked posts such as Deputy Head Libray Prefect and Counselling Prefect which allowed me to gain experience in working with different stakeholders at the campus.</p>
@@ -35,13 +35,13 @@
                     <p></p>
             </section>
             <p></p>
-            <section class = "txt_box" style = "background-color: rgba(153, 235, 255, 0.5);">
-                    <p style = "background-color: cyan;">Self-directed programs for leisure:</p>
-                    <ol>
+            <section class = "txt_box" style = "background-color: rgba(153, 235, 255, 0.6);">
+                    <h3 style = "line-height: 0%; margin-left: 5px;">Self-directed programs for leisure:</h3>
+                    <ol style = "margin-left: 10px;">
                         <li>C++
                             <ul>
                                 <li>
-                                    Linked-list Calendar <a href = "https://github.com/curtis-tsang/linked-list-calendar"; target = _blank;><div>[here]</div></a>
+                                    Linked-list Calendar <a href = "https://github.com/curtis-tsang/linked-list-calendar"; target = _blank;>[here]</a>
                                 </li>
                             </ul>
                         </li>
@@ -66,6 +66,17 @@
                                             data = pandas.DataFrame(Transcript)
                                             data.index += 1
                                             print(data)
+
+                                            grade_level = ["B-", "B", "B+", "A-", "A", "A+"]
+                                            axis = [0, 0, 0, 0, 0, 0]
+
+                                            for _ in Transcript["Grade"]:
+                                                for i in range(len(grade_level)):
+                                                    if (grade_level[i] == _):
+                                                        axis[i] += 1
+
+                                            fig, ax = matplotlib.pyplot.subplots()
+                                            ax.plot(grade_level, axis)
                                         </py-script>
                                     </body>
                                 </li>
