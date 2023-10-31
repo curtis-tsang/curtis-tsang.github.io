@@ -8,8 +8,25 @@ body{
 .txt_box{
     position: relative;
     border-radius: 10px;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(5px);
     border: 3px solid rgba(255, 255, 255, 0.5);
+    background: linear-gradient(rgba(255, 83, 206, 0.3), rgba(84, 255, 172, 0.3));
+}
+
+.txt_box_real{
+    position: relative;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    background: linear-gradient(rgba(255, 186, 235, 0.5), rgba(193, 255, 225, 0.5));
+}
+
+.select_box{
+    position: relative;
+    font-size: 20px;
+    backdrop-filter: blur(2px);
+    border: 3px solid rgba(62, 62, 62, 0.878);
+    background: linear-gradient(rgba(191, 219, 240, 0.9), rgba(198, 225, 255, 0.9));
 }
 
 .mega_box{
@@ -21,4 +38,44 @@ body{
 .heading_box{
     position: relative;
     backdrop-filter: blur(3px);
+}
+
+.tab{
+    margin: 25px;
+}
+
+a:link{
+    line-height: 35px;
+    color:rgb(38, 139, 255);
+}
+
+.frame{
+    position: relative;
+    margin: auto;
+    padding: 10px 10px 10px 10px;
+    border: 3px solid rgba(121, 59, 0, 0.8);
+    background: linear-gradient(rgba(104, 71, 0, 0.7), rgba(142, 90, 1, 0.7));
+}
+
+.split{
+    height: 50%;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border: 0;
+}
+
+.split_txt{
+    margin-left:20%;
+    height: 230px;
+    width: 28%;
+    position: relative;
+}
+
+.split_right{
+    margin-left:20%;
+    height: 300px;
+    width: 40%;
+    position: relative;
 }
