@@ -54,28 +54,30 @@ a:link{
     margin: auto;
     padding: 10px 10px 10px 10px;
     border: 3px solid rgba(121, 59, 0, 0.8);
-    background: linear-gradient(rgba(104, 71, 0, 0.7), rgba(142, 90, 1, 0.7));
+    background: linear-gradient(rgba(104, 71, 0, 0.9), rgba(142, 90, 1, 0.9));
 }
 
 .split{
-    height: 50%;
+    display: flex;
+    height: 60%;
     width: 100%;
     position: relative;
     overflow-x: hidden;
-    padding-top: 20px;
     border: 0;
 }
 
 .split_txt{
     margin-left:20%;
-    height: 230px;
+    height: 30%;
     width: 28%;
     position: relative;
 }
 
 .split_right{
-    margin-left:20%;
-    height: 300px;
-    width: 40%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left:5%;
+    height: 15%;
+    width: 15%;
     position: relative;
 }
