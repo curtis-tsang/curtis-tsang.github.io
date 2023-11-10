@@ -2,4 +2,5 @@
 
 A website about myself and (maybe) something I am trying out.
 
-I have no idea why github says it's 99% html :/
+##convert .ipynb to super long html, ending up with 99.9% HTML 
+##huh, :/
