@@ -1,113 +1,54 @@
-body{
-    margin-top: -20px;
-    margin-bottom: -20px;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding:0px;
-}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <link rel = "stylesheet" href = 'style_background.css'>
+    <div class = "mega_box">
+        <body>
+            <div class = "heading_box txt_box_real" style = "background-color: rgba(153, 235, 255, 0.5);">
+            <h1 style = "line-height: 100%; margin-left: 20%; margin-top: 40px;">TSANG, Tsz Chung Curtis</h1>
+            <p style = "line-height: 100%; margin-left: 20%;">Bachelor of Engineering in Computer Science with extended major in Artificial Intelligence (currently year 2)</p>
+            </div>
+            <p></p>
 
-.txt_box{
-    position: relative;
-    margin: 0;
-    border-radius: 10px;
-    backdrop-filter: blur(5px);
-    border: 3px solid rgba(255, 255, 255, 0.5);
-    background: linear-gradient(rgba(255, 83, 206, 0.3), rgba(84, 255, 172, 0.3));
-}
-
-.txt_box_real{
-    position: relative;
-    border-radius: 10px;
-    backdrop-filter: blur(5px);
-    border: 3px solid rgba(255, 255, 255, 0.5);
-    background: linear-gradient(rgba(255, 186, 235, 0.5), rgba(193, 255, 225, 0.5));
-}
-
-.select_box{
-    position: relative;
-    font-size: 20px;
-    backdrop-filter: blur(2px);
-    border: 3px solid rgba(62, 62, 62, 0.878);
-    background: linear-gradient(rgba(191, 219, 240, 0.9), rgba(198, 225, 255, 0.9));
-}
-
-.mega_box{
-    background-size: cover;
-    background-image: url("IMG_1081.JPG");
-    background-repeat : round ;
-}
-
-.heading_box{
-    position: relative;
-    backdrop-filter: blur(3px);
-}
-
-.tab{
-    margin: 25px;
-}
-
-a:link{
-    line-height: 35px;
-    color:rgb(38, 139, 255);
-}
-
-.frame{
-    position: relative;
-    margin: auto;
-    padding: 10px 10px 10px 10px;
-    border: 3px solid rgba(121, 59, 0, 0.8);
-    background: linear-gradient(rgba(104, 71, 0, 0.9), rgba(142, 90, 1, 0.9));
-}
-
-.split{
-    display: flex;
-    height: 60%;
-    width: 100% - 5px;
-    position: relative;
-    overflow-x: hidden;
-}
-
-.split_txt{
-    margin-left:20%;
-    height: 30%;
-    width: 28%;
-    position: relative;
-}
-
-.split_right{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-left:5%;
-    height: 15%;
-    width: 15%;
-    position: relative;
-}
-
-.item_frame{
-    position: relative;
-    margin: 0;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    border-radius: 5px;
-    border: 3px solid rgba(255, 255, 255, 0.6);
-    background: rgba(230,250,250, 0.5);
-}
-
-.item{
-    margin-left: 20%;
-    margin-top: 1px;
-    margin-bottom: 1px;
-    padding: 20px;
-    height: 10%;
-    width:  50%;
-    border: 2px solid rgba(100,100,100,0.8);
-    border-radius: 5px;
-    background-color: rgba(230,250,250,0.9);
-}
-
-.item_title{
-    font-size: 18px;
-}
-.item_description{
-    font-size: 13px;
-}
+        
+        <p></p>
+        <main>
+            <div class = "txt_box_real split" style = "background-color: rgba(153, 235, 255, 0.5);">
+                <div class = "split_txt">
+                    <h3 style = "line-height: 30%; font-size: 50px;">Hello !</h3>
+                    <span style = "line-height: 130%; margin-top: 40px; font-size: 20px; color: rgb(0, 0, 0);">I am Curtis who is currently studying in</span><a style = "line-height: 100%; margin-left:10px; font-size:20px; text-decoration:none" href = "https://hkust.edu.hk/">HKUST. </a>
+                    <span style = "line-height: 130%; margin-top: 40px; font-size: 20px; color: rgb(0, 0, 0);">I am exploring in software engineering and data analytics. I am also interested in artificial intelligence and how it is applied in real life.</span>
+                </div>
+                <div class = "split_right">
+                    <img src = "IMG_9658.jpg" width = "100%" height = "100%" style = "margin-right: 20px;" class = "frame">
+                </div>
+            </div>
+            <p></p>
+            <div class = "item_frame" style = "width: 100%">
+                <div style = "font-size: 25px; margin-left: 20%; margin-bottom: 10px;">Programming Courses:</div>
+                <div class = "item">
+                    <div class = "item_title">COMP 1021</div>
+                    <div class = "item_description">Introduction to Computer Science</div>
+                </div>
+                <div class = "item">
+                    <div class = "item_title">COMP 2011</div>
+                    <div class = "item_description">Programming with C++</div>
+                </div>
+                <div class = "item">
+                    <div class = "item_title">COMP 2012</div>
+                    <div class = "item_description">Object-Oriented Programming and Data Structures</div>
+                </div>
+            </div>
+        </main>
+        <nav>
+            <p class = "select_box" style = "background-color: rgba(109, 192, 255,0.2);">
+                <a href = "contact.html" style = "margin-left: 20%; text-decoration:none">My Contact</a>
+                <span class = "tab"></span>
+                <a href = "blog.html" style = "margin-left: 5%; text-decoration:none">About Me</a>
+                <span class = "tab"></span>
+                <a href = "https://curtis-tsang.github.io/pandas/index.html" style = "margin-left: 5%; text-decoration:none">Trying pandas</a>
+            </p>
+        </nav>
+        </body>
+</html>
