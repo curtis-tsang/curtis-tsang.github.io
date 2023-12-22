@@ -39,7 +39,7 @@ body{
 .mega_box{
     background-size: cover;
     backdrop-filter: blur(5px);
-    background-image: url("APC_0479.JPG");
+    background-image: url("./images/APC_0479.JPG");
     background-repeat : round ;
 }
 
