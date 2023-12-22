@@ -1,0 +1,39 @@
+.navbar_button{
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(162, 162, 162);
+    border: 0px;
+    background: none;
+    width: 10%;
+}
+
+.navbar_button:hover{
+    color: black;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(3px);
+    transition: all 1.2s;
+    transform: translateX(-100%);
+}
+
+.appear{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0%);
+}
+
+.even{
+    background-color: rgb(0, 0, 62);
+    color: white;
+    box-shadow: 4px 4px 4px 4px grey;
+}
+
+.odd{
+    background-color: white;
+    color: black;
+    box-shadow: 4px 4px 4px 4px rgb(182, 182, 182);
+}
+

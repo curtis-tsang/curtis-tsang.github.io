@@ -1,0 +1,26 @@
+html, body{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+
+    font-family:'Courier New', Courier, monospace;
+}
+
+ul{
+    display: inline;
+}
+
+li{
+    display: inline;
+}
+
+section{
+    display: grid;
+    align-content: center;
+    text-align: center;
+    font-size: 30px;
+    min-height: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-radius: 10px;
+}
