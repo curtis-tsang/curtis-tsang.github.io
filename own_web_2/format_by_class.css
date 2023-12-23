@@ -37,3 +37,26 @@
     box-shadow: 4px 4px 4px 4px rgb(182, 182, 182);
 }
 
+.drop_down{
+    width: 150px; 
+    height: 25px; 
+    vertical-align: middle; 
+    font-size: 16px; 
+    text-align: center; 
+    color: grey; 
+    border-radius: 10px; 
+    border: 2px solid cyan;
+}
+
+.drop_down:focus{
+    outline: none;
+}
+
+.description{
+    font-size: 18px;
+    width: 50%;
+    height: auto;
+    max-height: 200px;
+    margin-left: 25%;
+    overflow: scroll;
+}
