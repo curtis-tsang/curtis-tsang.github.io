@@ -51,7 +51,6 @@ function describe_determine(){
     
 }
 
-const descriptionArray = []
 let description = document.createElement("p");
 
 description.classList.add("description");
