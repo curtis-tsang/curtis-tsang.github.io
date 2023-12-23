@@ -1,4 +1,0 @@
-{
-    "To-do List": "It is a simple website that allows users to create and remove tasks to be done. It aims to facilitate working environment of users.",
-    "Weather App": "It is a website running on local host that reports Hong Kong's weather. It uses Django framework and WeatherAPI. The data is recorded in 15min interval."
-}
