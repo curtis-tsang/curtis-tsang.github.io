@@ -40,4 +40,4 @@ let description = document.createElement("p");
 
 description.classList.add("description");
 description.innerHTML = "";
-section_four.appendChild(description);
+section_four.appendChild(description); 
